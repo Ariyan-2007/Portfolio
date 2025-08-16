@@ -1,5 +1,6 @@
 ---
 
+import Profile from '@/components/Profile'
 import '../styles/global.css'
 ---
 
@@ -12,8 +13,14 @@ import '../styles/global.css'
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body class="bg-[#93bae9]">
-		<slot />
+	<body  class="bg-primary flex gap-[2rem] pt-[3rem] justify-center">
+        
+        <div class="bg-special h-[35rem] w-[15rem] border-1 border-gray-700 rounded-sm">
+            <Profile />
+        </div>
+        <div class="bg-special w-[40rem]  border-1 border-gray-700 rounded-sm">
+            <slot />
+        </div>
 	</body>
 </html>
 
