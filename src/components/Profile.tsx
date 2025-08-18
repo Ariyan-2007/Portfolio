@@ -1,17 +1,28 @@
 import React from 'react'
-import profileInfo from '../lib/profile-info.json';
 import { Button } from './ui/button';
 import { MailIcon, MapIcon, PhoneIcon } from 'lucide-react';
 
+interface ProfileProps {
+  profileInfo: {
+    Photo: string;
+    Name: string;
+    Title: string;
+    Email: string;
+    Phone: string;
+    City: string;
+    Country: string;
+  };
+}
 
 
-export default function Profile() {
+
+export default function Profile({ profileInfo } : ProfileProps) {
     
   return (
     <div>
-      <div className='bg-gray-600/40 rounded-4xl m-[2rem]'>
+      {/* <div className='bg-gray-600/40 rounded-4xl m-[2rem]'>
             <img className='rounded-full p-[1rem]' src={profileInfo.Photo} alt="Profile" />
-      </div>
+      </div> */}
       <div className='text-gray-400  flex flex-col justify-center items-center gap-[1rem]'>
         <p className='font-bold'>{profileInfo.Name}</p>
         <div className='bg-gray-600/40 py-[0.3rem] px-[0.7rem] flex justify-center items-center '>
@@ -40,11 +51,11 @@ export default function Profile() {
         ))}
         </div>
         
-        <div className='flex justify-center gap-[0.5rem] w-[1.5rem] h-[1.5rem]'>
-            <img src='/companies/facebook.svg'></img>
-            <img src='/companies/github.svg'></img>
-            <img src='/companies/instagram.svg'></img>
-        </div>
+        {/* <div className='flex justify-center gap-[0.5rem] w-[1.5rem] h-[1.5rem]'>
+            <img src='/companies/facebook.svg' />
+            <img src='/companies/github.svg' />
+            <img src='/companies/instagram.svg' />
+        </div> */}
       </div>
     </div>
   )

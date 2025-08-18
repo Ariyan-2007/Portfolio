@@ -1,7 +1,10 @@
 ---
 
 import Profile from '@/components/Profile'
+import NavBar from '@/components/Navbar.astro'
+
 import '../styles/global.css'
+import ProfileWrapper from '@/components/wrapper/profileWrapper.astro'
 ---
 
 <!doctype html>
@@ -16,10 +19,13 @@ import '../styles/global.css'
 	<body  class="bg-primary flex gap-[2rem] pt-[3rem] justify-center">
         
         <div class="bg-special h-[35rem] w-[15rem] border-1 border-gray-700 rounded-sm">
-            <Profile />
+            <ProfileWrapper />
         </div>
-        <div class="bg-special w-[40rem]  border-1 border-gray-700 rounded-sm">
-            <slot />
+        <div class="bg-special w-[50rem]  border-1 border-gray-700 rounded-sm">
+			<NavBar />
+			<span>
+				<slot />
+			</span>
         </div>
 	</body>
 </html>

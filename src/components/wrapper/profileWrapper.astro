@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import Profile from "@/components/Profile.tsx";
+import profileInfo from "@/lib/profile-info.json";
+
+var profilePhoto = profileInfo.Photo;
+---
+
+
+<div class="bg-gray-600/40 rounded-4xl m-[2rem]">
+  <Image
+    src={profilePhoto}
+    alt="Profile"
+    class="rounded-full p-[1rem]"
+    width={200}
+    height={200}
+    loading="eager"
+    decoding="sync"
+  />
+</div>
+
+
+<Profile profileInfo={profileInfo} />

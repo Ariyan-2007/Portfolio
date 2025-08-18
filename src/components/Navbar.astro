@@ -1,0 +1,25 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { name: "About", path: "/" },
+  { name: "Resume", path: "/resume" },
+  { name: "Projects", path: "/projects" },
+  { name: "Contact", path: "/contact" }
+];
+---
+
+<nav class="flex gap-6 p-4 border-b border-gray-700 bg-special justify-end">
+  {links.map(link => (
+    <a
+      href={link.path}
+      class={`${
+        currentPath === link.path
+          ? "text-yellow-200 font-bold"
+          : "text-gray-300 hover:text-yellow-200"
+      }`}
+    >
+      {link.name}
+    </a>
+  ))}
+</nav>

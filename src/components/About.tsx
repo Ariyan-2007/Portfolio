@@ -2,7 +2,7 @@ import { useState } from "react";
 import '../styles/global.css';
 import { Button } from "./ui/button";
 
-export default function Welcome() {
+export default function About() {
 
  const [count, setCount] = useState(0);
  
