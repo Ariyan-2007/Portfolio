@@ -6,6 +6,7 @@ interface ProfileProps {
   profileInfo: {
     Photo: string;
     Name: string;
+    DOB: string;
     Title: string;
     Email: string;
     Phone: string;

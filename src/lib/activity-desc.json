@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "title": "System Design",
+      "description": "Crafting scalable and efficient architectures that balance performance, reliability, and flexibility."
+    },
+    {
+      "title": "Backend Development",
+      "description": "Building robust APIs and services with clean, optimized code to power applications seamlessly."
+    },
+    {
+      "title": "Frontend Development",
+      "description": "Designing responsive, user-friendly interfaces that blend aesthetics with functionality."
+    },
+    {
+      "title": "Machine Learning",
+      "description": "Exploring AI models and applying ML/DL techniques to solve real-world challenges."
+    }
+  ]
+}

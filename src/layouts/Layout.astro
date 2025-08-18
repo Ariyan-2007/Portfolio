@@ -1,6 +1,5 @@
 ---
 
-import Profile from '@/components/Profile'
 import NavBar from '@/components/Navbar.astro'
 
 import '../styles/global.css'
@@ -14,18 +13,18 @@ import ProfileWrapper from '@/components/wrapper/profileWrapper.astro'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Ariyan</title>
 	</head>
-	<body  class="bg-primary flex gap-[2rem] pt-[3rem] justify-center">
+	<body  class="bg-black flex gap-[2rem] pt-[3rem] justify-center">
         
-        <div class="bg-special h-[35rem] w-[15rem] border-1 border-gray-700 rounded-sm">
+        <div class="bg-neutral-900 h-[35rem] w-[15rem] border-1 border-neutral-700 rounded-md">
             <ProfileWrapper />
         </div>
-        <div class="bg-special w-[50rem]  border-1 border-gray-700 rounded-sm">
+        <div class="bg-neutral-900 w-[50rem] max-h-screen  border-1 border-neutral-700 rounded-md">
 			<NavBar />
-			<span>
+			<div class="px-[1rem] pt-[2rem]">
 				<slot />
-			</span>
+			</div>
         </div>
 	</body>
 </html>
