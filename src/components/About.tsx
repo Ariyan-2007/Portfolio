@@ -52,7 +52,7 @@ export default function About() {
       <div className="grid grid-cols-2 gap-4">
         {activityDesc.activities.map((activity, index) => (
           <div key={index} className="p-4 rounded-2xl bg-neutral-800 shadow-md flex items-start gap-3">
-          {iconMap[activity.title] || <Boxes className="w-6 h-6 text-yellow-200" />} 
+          {iconMap[activity.title]} 
           <div>
             <h3 className="text-lg font-semibold text-neutral-100">{activity.title}</h3>
             <p className="text-neutral-400">{activity.description}</p>
