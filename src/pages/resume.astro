@@ -1,7 +1,12 @@
 ---
+
+import ResumeSection from "../components/Resume";
 import Layout from "../layouts/Layout.astro";
+
 ---
 
 <Layout>
-    
+ <h1 class="text-neutral-200 font-bold text-3xl">Resume</h1>
+ <hr class="mt-[1.25rem] border-2 border-yellow-300 w-[2rem] rounded-sm">
+ <ResumeSection client:load/>
 </Layout>
