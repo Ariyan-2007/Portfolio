@@ -20,9 +20,9 @@ import ProfileWrapper from '@/components/wrapper/profileWrapper.astro'
         <div class="bg-neutral-900 h-[35rem] w-[15rem] border-1 border-neutral-700 rounded-md">
             <ProfileWrapper />
         </div>
-        <div class="bg-neutral-900 w-[50rem] max-h-screen  border-1 border-neutral-700 rounded-md">
+        <div class="bg-neutral-900 w-[50rem] min-h-fit  border-1 border-neutral-700 rounded-md">
 			<NavBar client:load/>
-			<div class="px-[1rem] pt-[2rem]">
+			<div class="px-[1rem] py-[2rem]">
 				<slot />
 			</div>
         </div>
