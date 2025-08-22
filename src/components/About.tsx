@@ -73,7 +73,7 @@ export default function About() {
           })}
           <div>
             <h3 className="text-lg font-semibold text-neutral-100">{activity.title}</h3>
-            <p className="text-neutral-400">{activity.description}</p>
+            <p className=" text-neutral-400">{activity.description}</p>
           </div>
         </motion.div>
       ))}

@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "title": "Pawtato Admin",
+      "description": "An admin dashboard for managing Pawtato platform, built with modern frontend tools and responsive design.",
+      "link": "https://github.com/Ariyan-2007/Pawtato-Admin"
+    },
+    {
+      "title": "Antivaly",
+      "description": "A complete solution for tracking valuables, with real-time alerts and data visualization features.",
+      "link": "https://github.com/Ariyan-2007/Antivaly-"
+    },
+    {
+      "title": "Weather Forecasting Using ML",
+      "description": "Machine Learning model to predict weather patterns with high accuracy and visualization dashboard.",
+      "link": "https://github.com/Ariyan-2007/Weather-Forecasting-Using-ML"
+    },
+    {
+      "title": "Town View",
+      "description": "A mapping and visualization project for exploring towns interactively with dynamic data overlays.",
+      "link": "https://github.com/Ariyan-2007/Town-View"
+    }
+  ]
+}
