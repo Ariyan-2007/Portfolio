@@ -4,13 +4,19 @@ import { Button } from "./ui/button";
 import profileInfo from "@/lib/profile-info.json";
 import activityDesc from "@/lib/activity-desc.json";
 import { Boxes, Brain, Monitor, Server } from "lucide-react";
+import TwinkleStar from "./animation/TwinkleStar";
+import React from "react";
+import { motion } from "framer-motion";
+
+const iconClass= "w-12 h-12 text-yellow-200";
 
 const iconMap: Record<string, JSX.Element> = {
-  "System Design": <Boxes className="w-12 h-12 text-yellow-200" />,
-  "Backend Development": <Server className="w-12 h-12 text-yellow-200" />,
-  "Frontend Development": <Monitor className="w-12 h-12 text-yellow-200" />,
-  "Machine Learning": <Brain className="w-12 h-12 text-yellow-200" />,
+  "System Design": <Boxes className={iconClass} />,
+  "Backend Development": <Server className={iconClass} />,
+  "Frontend Development": <Monitor className={iconClass} />,
+  "Machine Learning": <Brain className={iconClass} />,
 };
+
 
 
 
@@ -51,15 +57,28 @@ export default function About() {
       </h2>
       <div className="grid grid-cols-2 gap-4">
         {activityDesc.activities.map((activity, index) => (
-          <div key={index} className="p-4 rounded-2xl bg-neutral-800 shadow-md flex items-start gap-3">
-          {iconMap[activity.title]} 
+        <motion.div
+          key={index}
+          className="group p-4 rounded-2xl bg-neutral-800 flex items-start gap-3 cursor-pointer border-2 border-transparent shadow-md"
+          whileHover={{
+            boxShadow: "0 0 20px rgba(250,204,21,0.8)",
+            borderColor: "rgba(250,204,21,0.8)",
+            scale: 1.02,
+          }}
+          transition={{ type: "spring", stiffness: 200, damping: 10 }}
+        >
+          {React.cloneElement(iconMap[activity.title], {
+            className:
+              "w-12 h-12 text-yellow-200 transition group-hover:drop-shadow-[0_0_12px_rgba(250,204,21,0.8)]",
+          })}
           <div>
             <h3 className="text-lg font-semibold text-neutral-100">{activity.title}</h3>
             <p className="text-neutral-400">{activity.description}</p>
           </div>
-        </div>
-        ))}
+        </motion.div>
+      ))}
       </div>
+
     </div>
   )
 }

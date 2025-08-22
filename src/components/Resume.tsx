@@ -1,5 +1,5 @@
 import '../styles/global.css';
-import { DownloadIcon } from "lucide-react";
+import { DownloadIcon, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Resume() {
@@ -22,6 +22,9 @@ export default function Resume() {
         <DownloadIcon className="w-6 h-6 animate-bounce" />
         <span>Download Resume</span>
       </motion.a>
+      
+            
+
     </div>
   );
 }
