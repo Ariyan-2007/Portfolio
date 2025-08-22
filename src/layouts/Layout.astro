@@ -21,7 +21,7 @@ import ProfileWrapper from '@/components/wrapper/profileWrapper.astro'
             <ProfileWrapper />
         </div>
         <div class="bg-neutral-900 w-[50rem] max-h-screen  border-1 border-neutral-700 rounded-md">
-			<NavBar />
+			<NavBar client:load/>
 			<div class="px-[1rem] pt-[2rem]">
 				<slot />
 			</div>
