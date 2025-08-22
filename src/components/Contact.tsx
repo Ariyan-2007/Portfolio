@@ -1,6 +1,6 @@
 import '../styles/global.css';
 import { Mail, Phone } from "lucide-react";
-import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import contactData from "@/lib/contact.json";
 
@@ -8,7 +8,7 @@ export default function ContactSection() {
   return (
     <div className="text-neutral-300 pt-[2rem] flex flex-col items-center gap-[2rem] text-sm">
       <p className="text-center max-w-2xl">
-        You can reach me via email, phone, or follow me on social media.
+        You can reach me via email, phone, WhatsApp, or follow me on social media.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
@@ -21,6 +21,7 @@ export default function ContactSection() {
             case "linkedin": Icon = FaLinkedin; break;
             case "facebook": Icon = FaFacebook; break;
             case "instagram": Icon = FaInstagram; break;
+            case "whatsapp": Icon = FaWhatsapp; break;
             default: Icon = Mail;
           }
 
