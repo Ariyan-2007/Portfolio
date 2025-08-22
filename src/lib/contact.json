@@ -1,0 +1,35 @@
+{
+  "contacts": [
+    {
+      "type": "email",
+      "label": "ariyanjahangireng@gmail.com",
+      "link": "mailto:ariyanjahangireng@gmail.com"
+    },
+    {
+      "type": "phone",
+      "label": "+880 1817 274124",
+      "link": "tel:+8801817274124"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/ariyan-jahangir-884550198/"
+    }
+    ,
+    {
+      "type": "facebook",
+      "label": "Facebook",
+      "link": "https://www.facebook.com/username"
+    },
+    {
+      "type": "instagram",
+      "label": "Instagram",
+      "link": "https://www.instagram.com/username"
+    },
+    {
+      "type": "whatsapp",
+      "label": "WhatsApp",
+      "link": "https://wa.me/8801234567890"
+    }
+  ]
+}
